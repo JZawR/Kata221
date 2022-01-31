@@ -24,7 +24,7 @@ public class MainApp {
 
       // Достаем Пользователя по машине
       try {
-         System.out.println(userService.getUserByCar(new Car("nissan", 3)));
+         System.out.println(userService.getUserByCar("nissan", 3));
       } catch (IndexOutOfBoundsException e) {
          System.out.println("\n Не нашлось :( \n");
       }
