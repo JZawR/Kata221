@@ -23,11 +23,7 @@ public class MainApp {
       userService.add(new User("User4", "Lastname4", "user4@mail.ru", new Car("audi", 4)));
 
       // Достаем Пользователя по машине
-      try {
-         System.out.println(userService.getUserByCar("nissan", 3));
-      } catch (IndexOutOfBoundsException e) {
-         System.out.println("\n Не нашлось :( \n");
-      }
+      System.out.println(userService.getUserByCar("BMW", 2));
 
 
       List<User> users = userService.listUsers();
